@@ -1,0 +1,730 @@
+[
+    {
+        "name": "400 Steak Club",
+        "geo": {
+            "lat": -22.8809059,
+            "lng": -43.37077379999999
+        }
+    },
+    {
+        "name": "Adega Pérola",
+        "geo": {
+            "lat": -22.9661504,
+            "lng": -43.1873235
+        }
+    },
+    {
+        "name": "Angurmê",
+        "geo": {
+            "lat": -22.9141802,
+            "lng": -43.2444129
+        }
+    },
+    {
+        "name": "Areias de Itacoatiara",
+        "geo": {
+            "lat": -22.9632413,
+            "lng": -43.0317288
+        }
+    },
+    {
+        "name": "Armazém São Thiago / Bar do Gomes",
+        "geo": {
+            "lat": -22.9213622,
+            "lng": -43.1895658
+        }
+    },
+    {
+        "name": "Art Chopp",
+        "geo": {
+            "lat": -22.9236527,
+            "lng": -43.3775213
+        }
+    },
+    {
+        "name": "Baixo Araguaia",
+        "geo": {
+            "lat": -22.9331996,
+            "lng": -43.3320876
+        }
+    },
+    {
+        "name": "Baixo Gago",
+        "geo": {
+            "lat": -22.9314942,
+            "lng": -43.1811579
+        }
+    },
+    {
+        "name": "Balaio do Zé",
+        "geo": {
+            "lat": -22.9347531,
+            "lng": -43.1770054
+        }
+    },
+    {
+        "name": "Balbino’s – Delícia de Costela",
+        "geo": {
+            "lat": -22.9583063,
+            "lng": -43.3843031
+        }
+    },
+    {
+        "name": "Bar da Gema",
+        "geo": {
+            "lat": -22.9813803,
+            "lng": -43.1928055
+        }
+    },
+    {
+        "name": "Bar da Laura",
+        "geo": {
+            "lat": -22.8858792,
+            "lng": -43.1229828
+        }
+    },
+    {
+        "name": "Bar da Portuguesa",
+        "geo": {
+            "lat": -22.8488025,
+            "lng": -43.26134950000001
+        }
+    },
+    {
+        "name": "Bar do David",
+        "geo": {
+            "lat": -22.9599025,
+            "lng": -43.170128
+        }
+    },
+    {
+        "name": "Bar do Elson",
+        "geo": {
+            "lat": -23.0041561,
+            "lng": -43.3092652
+        }
+    },
+    {
+        "name": "Bar do Gallo",
+        "geo": {
+            "lat": -22.9247601,
+            "lng": -43.37979910000001
+        }
+    },
+    {
+        "name": "Bar do Jorginho",
+        "geo": {
+            "lat": -22.9704096,
+            "lng": -43.0460514
+        }
+    },
+    {
+        "name": "Bar do Mariano",
+        "geo": {
+            "lat": -22.9201263,
+            "lng": -43.2634882
+        }
+    },
+    {
+        "name": "Bar do Mineiro",
+        "geo": {
+            "lat": -22.9210977,
+            "lng": -43.1869178
+        }
+    },
+    {
+        "name": "Bar do Momo",
+        "geo": {
+            "lat": -22.929775,
+            "lng": -43.2432877
+        }
+    },
+    {
+        "name": "Bar do Omar",
+        "geo": {
+            "lat": -22.9031879,
+            "lng": -43.2044782
+        }
+    },
+    {
+        "name": "Bar do Pernambuco",
+        "geo": {
+            "lat": -22.8896214,
+            "lng": -43.118697
+        }
+    },
+    {
+        "name": "Bar do Tino",
+        "geo": {
+            "lat": -22.9370132,
+            "lng": -43.2047442
+        }
+    },
+    {
+        "name": "Bar du Barão",
+        "geo": {
+            "lat": -22.9240308,
+            "lng": -43.2562597
+        }
+    },
+    {
+        "name": "Bar Palhinha",
+        "geo": {
+            "lat": -22.9541471,
+            "lng": -43.1973833
+        }
+    },
+    {
+        "name": "Bar Sambódromo",
+        "geo": {
+            "lat": -22.9122254,
+            "lng": -43.1978015
+        }
+    },
+    {
+        "name": "Bar Santo Remédio",
+        "geo": {
+            "lat": -22.9237552,
+            "lng": -43.2552298
+        }
+    },
+    {
+        "name": "Bar Simplesmente",
+        "geo": {
+            "lat": -22.9212645,
+            "lng": -43.186566
+        }
+    },
+    {
+        "name": "Berton Botequim e Restaurante",
+        "geo": {
+            "lat": -22.8997043,
+            "lng": -43.1039008
+        }
+    },
+    {
+        "name": "Biroska do Camarão",
+        "geo": {
+            "lat": -22.8239266,
+            "lng": -43.1789053
+        }
+    },
+    {
+        "name": "Bistrô Aconchego",
+        "geo": {
+            "lat": -22.8888438,
+            "lng": -43.3658608
+        }
+    },
+    {
+        "name": "Bobô Bar",
+        "geo": {
+            "lat": -22.9012305,
+            "lng": -43.2824259
+        }
+    },
+    {
+        "name": "Bode Cheiroso",
+        "geo": {
+            "lat": -22.9145809,
+            "lng": -43.2259902
+        }
+    },
+    {
+        "name": "Boemia Social Clube",
+        "geo": {
+            "lat": -22.8412604,
+            "lng": -43.3058513
+        }
+    },
+    {
+        "name": "Booze Bar",
+        "geo": {
+            "lat": -22.913377,
+            "lng": -43.1812346
+        }
+    },
+    {
+        "name": "Boteco Bendito Jamón",
+        "geo": {
+            "lat": -22.8281191,
+            "lng": -43.3192587
+        }
+    },
+    {
+        "name": "Boteco Carioquinha",
+        "geo": {
+            "lat": -22.913961,
+            "lng": -43.1826958
+        }
+    },
+    {
+        "name": "Boteco do Lobo",
+        "geo": {
+            "lat": -22.7600198,
+            "lng": -43.4375631
+        }
+    },
+    {
+        "name": "Boteco do Raoni",
+        "geo": {
+            "lat": -22.9242537,
+            "lng": -43.2546523
+        }
+    },
+    {
+        "name": "Boteco do Teixeira",
+        "geo": {
+            "lat": -22.7896266,
+            "lng": -43.3048607
+        }
+    },
+    {
+        "name": "Boteco Vou Demais",
+        "geo": {
+            "lat": -22.9263313,
+            "lng": -43.2533546
+        }
+    },
+    {
+        "name": "Botequim Chega Mais",
+        "geo": {
+            "lat": -22.9661608,
+            "lng": -43.1817489
+        }
+    },
+    {
+        "name": "Botequim Rio Antigo",
+        "geo": {
+            "lat": -22.8467027,
+            "lng": -43.2676951
+        }
+    },
+    {
+        "name": "Brazuca",
+        "geo": {
+            "lat": -22.7995691,
+            "lng": -43.2025282
+        }
+    },
+    {
+        "name": "Buteco do Portuga",
+        "geo": {
+            "lat": -22.7545466,
+            "lng": -43.4368212
+        }
+    },
+    {
+        "name": "Buteco Maria Flor",
+        "geo": {
+            "lat": -22.924538,
+            "lng": -43.2509229
+        }
+    },
+    {
+        "name": "Buteko em Nome do Pai e do Filho",
+        "geo": {
+            "lat": -22.9245017,
+            "lng": -43.2522452
+        }
+    },
+    {
+        "name": "Cachambeer",
+        "geo": {
+            "lat": -22.8865553,
+            "lng": -43.2769099
+        }
+    },
+    {
+        "name": "Caldo de Pinto",
+        "geo": {
+            "lat": -22.775127,
+            "lng": -43.3754783
+        }
+    },
+    {
+        "name": "Caneco 85",
+        "geo": {
+            "lat": -22.9345302,
+            "lng": -43.1805668
+        }
+    },
+    {
+        "name": "Carpaccio",
+        "geo": {
+            "lat": -22.7901241,
+            "lng": -43.36617529999999
+        }
+    },
+    {
+        "name": "Casa da Sogra",
+        "geo": {
+            "lat": -22.9704096,
+            "lng": -43.0460514
+        }
+    },
+    {
+        "name": "Casa do Galeto",
+        "geo": {
+            "lat": -22.8934498,
+            "lng": -43.25912080000001
+        }
+    },
+    {
+        "name": "Cevina",
+        "geo": {
+            "lat": -22.7907208,
+            "lng": -43.3020493
+        }
+    },
+    {
+        "name": "Cine Botequim",
+        "geo": {
+            "lat": -22.8987074,
+            "lng": -43.1786556
+        }
+    },
+    {
+        "name": "Coletivo Bar",
+        "geo": {
+            "lat": -22.917951,
+            "lng": -43.2323308
+        }
+    },
+    {
+        "name": "Contemporâneo Lapa",
+        "geo": {
+            "lat": -22.9122394,
+            "lng": -43.1830968
+        }
+    },
+    {
+        "name": "Costelas",
+        "geo": {
+            "lat": -22.9135811,
+            "lng": -43.21543339999999
+        }
+    },
+    {
+        "name": "Deck Bar e Restaurante",
+        "geo": {
+            "lat": -23.0011503,
+            "lng": -43.307866
+        }
+    },
+    {
+        "name": "Deza Botequim",
+        "geo": {
+            "lat": -22.9346804,
+            "lng": -43.1768423
+        }
+    },
+    {
+        "name": "Dida Bar",
+        "geo": {
+            "lat": -22.9136131,
+            "lng": -43.2151728
+        }
+    },
+    {
+        "name": "Dom Pedro",
+        "geo": {
+            "lat": -22.8932309,
+            "lng": -43.2406452
+        }
+    },
+    {
+        "name": "Edinho do Caranguejo",
+        "geo": {
+            "lat": -22.7839536,
+            "lng": -43.3112397
+        }
+    },
+    {
+        "name": "Empório da Ovelha",
+        "geo": {
+            "lat": -22.9027683,
+            "lng": -43.112893
+        }
+    },
+    {
+        "name": "Empório do Bacalhau",
+        "geo": {
+            "lat": -22.8419616,
+            "lng": -43.3233729
+        }
+    },
+    {
+        "name": "Empório Quintana Boteco",
+        "geo": {
+            "lat": -22.8947332,
+            "lng": -43.236612
+        }
+    },
+    {
+        "name": "Empório Santa Oliva",
+        "geo": {
+            "lat": -22.9475124,
+            "lng": -43.3399922
+        }
+    },
+    {
+        "name": "Enchendo Linguiça",
+        "geo": {
+            "lat": -22.9219422,
+            "lng": -43.2636914
+        }
+    },
+    {
+        "name": "Folia do Boi",
+        "geo": {
+            "lat": -22.890126,
+            "lng": -43.273817
+        }
+    },
+    {
+        "name": "Galpão Gourmet GG",
+        "geo": {
+            "lat": -22.9439504,
+            "lng": -43.3344262
+        }
+    },
+    {
+        "name": "Gato de Botas",
+        "geo": {
+            "lat": -22.9134166,
+            "lng": -43.2437861
+        }
+    },
+    {
+        "name": "Granel",
+        "geo": {
+            "lat": -22.8968779,
+            "lng": -43.0995757
+        }
+    },
+    {
+        "name": "Hora Extra",
+        "geo": {
+            "lat": -22.8845923,
+            "lng": -43.3679092
+        }
+    },
+    {
+        "name": "Ilha do Sol",
+        "geo": {
+            "lat": -22.7625403,
+            "lng": -43.1083692
+        }
+    },
+    {
+        "name": "Liceu Grill",
+        "geo": {
+            "lat": -22.9498806,
+            "lng": -43.1848917
+        }
+    },
+    {
+        "name": "Maracuyá",
+        "geo": {
+            "lat": -23.0000019,
+            "lng": -43.3090754
+        }
+    },
+    {
+        "name": "Minha Joia",
+        "geo": {
+            "lat": -22.943072,
+            "lng": -43.0574497
+        }
+    },
+    {
+        "name": "Mr. Meat",
+        "geo": {
+            "lat": -22.9135726,
+            "lng": -43.2445402
+        }
+    },
+    {
+        "name": "Nasceu do Sol",
+        "geo": {
+            "lat": -22.9239484,
+            "lng": -43.255872
+        }
+    },
+    {
+        "name": "Noo Cachaçaria",
+        "geo": {
+            "lat": -22.9132864,
+            "lng": -43.215008
+        }
+    },
+    {
+        "name": "Oficina do Crepe",
+        "geo": {
+            "lat": -22.9243378,
+            "lng": -43.2561743
+        }
+    },
+    {
+        "name": "Os Imortais",
+        "geo": {
+            "lat": -22.9648766,
+            "lng": -43.1772212
+        }
+    },
+    {
+        "name": "Palitus Bar",
+        "geo": {
+            "lat": -22.9367765,
+            "lng": -43.1078346
+        }
+    },
+    {
+        "name": "Pasta da Nonna",
+        "geo": {
+            "lat": -22.7769933,
+            "lng": -43.293992
+        }
+    },
+    {
+        "name": "Pastelaria do Lido",
+        "geo": {
+            "lat": -22.7619901,
+            "lng": -43.1101027
+        }
+    },
+    {
+        "name": "Pescados na Brasa",
+        "geo": {
+            "lat": -22.9027749,
+            "lng": -43.2581452
+        }
+    },
+    {
+        "name": "Princesa da Lapa",
+        "geo": {
+            "lat": -22.9158749,
+            "lng": -43.1780009
+        }
+    },
+    {
+        "name": "Quintal do Peter Espetaria",
+        "geo": {
+            "lat": -22.7561466,
+            "lng": -43.4382622
+        }
+    },
+    {
+        "name": "Quintal do Stuart",
+        "geo": {
+            "lat": -22.8871355,
+            "lng": -43.2762254
+        }
+    },
+    {
+        "name": "Real Chopp",
+        "geo": {
+            "lat": -22.9672181,
+            "lng": -43.1855217
+        }
+    },
+    {
+        "name": "Rei do Bacalhau",
+        "geo": {
+            "lat": -22.8898425,
+            "lng": -43.3009418
+        }
+    },
+    {
+        "name": "Ruanita",
+        "geo": {
+            "lat": -22.9681318,
+            "lng": -43.1887245
+        }
+    },
+    {
+        "name": "Salete",
+        "geo": {
+            "lat": -22.9153197,
+            "lng": -43.220093
+        }
+    },
+    {
+        "name": "Santa Garrafa",
+        "geo": {
+            "lat": -22.9191023,
+            "lng": -43.2531708
+        }
+    },
+    {
+        "name": "Simples Assim",
+        "geo": {
+            "lat": -22.822877,
+            "lng": -43.1716354
+        }
+    },
+    {
+        "name": "Tasca Carvalho",
+        "geo": {
+            "lat": -22.9637842,
+            "lng": -43.1774178
+        }
+    },
+    {
+        "name": "Tibar",
+        "geo": {
+            "lat": -22.917667,
+            "lng": -43.3865373
+        }
+    },
+    {
+        "name": "Tô Careca de Saber",
+        "geo": {
+            "lat": -22.887786,
+            "lng": -43.275305
+        }
+    },
+    {
+        "name": "Umas e Ostras",
+        "geo": {
+            "lat": -22.9220686,
+            "lng": -43.2324668
+        }
+    },
+    {
+        "name": "Vint 2 bar",
+        "geo": {
+            "lat": -22.9232106,
+            "lng": -43.3804442
+        }
+    },
+    {
+        "name": "Zeca FC",
+        "geo": {
+            "lat": -22.9836511,
+            "lng": -43.2007899
+        }
+    },
+    {
+        "name": "Zeca’s Paquetá",
+        "geo": {
+            "lat": -22.7611944,
+            "lng": -43.1077915
+        }
+    },
+    {
+        "name": "Zezimbar",
+        "geo": {
+            "lat": -22.9677577,
+            "lng": -43.1846397
+        }
+    },
+    {
+        "name": "Zinho Bier",
+        "geo": {
+            "lat": -22.892492,
+            "lng": -43.239602
+        }
+    }
+]
