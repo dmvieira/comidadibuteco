@@ -22,14 +22,18 @@ function initMap() {
 }
 
 function createMarker(name, geo) {
-    
 
-  new google.maps.Marker({
+  var marker = new google.maps.Marker({
     map,
     position: geo,
     title: name
   });
-
+  var infowindow = new google.maps.InfoWindow({
+    content: name
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
 }
 
 window.initMap = initMap;
