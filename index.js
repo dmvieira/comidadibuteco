@@ -1,12 +1,14 @@
+let map;
+
 function changePosition(position){
-    window.map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude)).setZoom(12);
+    map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude)).setZoom(12);
 }
 
 function initMap() {
   const rio = new google.maps.LatLng(-22.958296, -43.257151);
 
     
-  window.map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
     center: rio,
     zoom: 6
   });
@@ -31,7 +33,7 @@ function initMap() {
 function createMarker(name, geo) {
 
   var marker = new google.maps.Marker({
-    window.map,
+    map,
     position: geo,
     title: name
   });
@@ -39,7 +41,7 @@ function createMarker(name, geo) {
     content: name
   });
   marker.addListener('click', function() {
-    infowindow.open(window.map, marker);
+    infowindow.open(map, marker);
   });
 }
 
