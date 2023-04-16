@@ -1,12 +1,21 @@
 let map;
 
+function changePosition(position){
+    map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+}
+
 function initMap() {
   const rio = new google.maps.LatLng(-22.958296, -43.257151);
 
+    
   map = new google.maps.Map(document.getElementById("map"), {
     center: rio,
-    zoom: 4
+    zoom: 6
   });
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(changePosition);
+  } 
 
   fetch("./places.json")
     .then(function(response) {
