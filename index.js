@@ -1,7 +1,7 @@
 let map;
 
 function changePosition(position){
-    map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+    map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude)).setZoom(12);
 }
 
 function initMap() {
