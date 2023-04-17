@@ -33,7 +33,7 @@ function initMap(position) {
 
 function checkAndInit(){
   if (navigator.geolocation) {
-    return navigator.geolocation.getCurrentPosition({success: initMap, error: initMap});
+    return navigator.geolocation.getCurrentPosition(initMap, initMap);
   } else {
     return initMap({});
   }
