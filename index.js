@@ -6,7 +6,7 @@ function initMap(position) {
 
   if (position.coords) {
     map = new google.maps.Map(document.getElementById("map"), {
-      center: new google.maps.LatLng(position.coords.latitude, lng:position.coords.longitude),
+      center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
       zoom: 12
     });
   }
