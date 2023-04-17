@@ -1,22 +1,22 @@
 let map;
 
 
-function initMap() {
+function initMap(position) {
   const rio = new google.maps.LatLng(-22.958296, -43.257151);
 
-    
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: rio,
-    zoom: 6
-  });
-
-  function changePosition(position, map=map){
-      map.setCenter({lat:position.coords.latitude, lng:position.coords.longitude}).setZoom(12);
+  if (position.coords) {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: new google.maps.LatLng(position.coords.latitude, lng:position.coords.longitude),
+      zoom: 12
+    });
+  }
+  else {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: rio,
+      zoom: 6
+    });
   }
 
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(changePosition);
-  } 
 
   fetch("./places.json")
     .then(function(response) {
@@ -46,4 +46,4 @@ function createMarker(name, geo) {
   });
 }
 
-window.initMap = initMap;
+window.initMap = navigator.geolocation.getCurrentPosition({success: initMap, error: initMap});
