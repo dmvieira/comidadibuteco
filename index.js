@@ -46,4 +46,4 @@ function createMarker(name, geo) {
   });
 }
 
-window.initMap = navigator.geolocation.getCurrentPosition({success: initMap, error: initMap});
+window.initMap = function(){ if (navigator.geolocation) { return navigator.geolocation.getCurrentPosition({success: initMap, error: initMap});} else {return InitMap({});}};
