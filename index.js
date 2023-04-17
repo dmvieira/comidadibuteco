@@ -31,6 +31,14 @@ function initMap(position) {
 
 }
 
+function checkAndInit(){
+  if (navigator.geolocation) {
+    return navigator.geolocation.getCurrentPosition({success: initMap, error: initMap});
+  } else {
+    return initMap({});
+  }
+}
+
 function createMarker(name, geo) {
 
   var marker = new google.maps.Marker({
@@ -46,4 +54,4 @@ function createMarker(name, geo) {
   });
 }
 
-window.initMap = function(){ if (navigator.geolocation) { return navigator.geolocation.getCurrentPosition({success: initMap, error: initMap});} else {return InitMap({});}};
+window.initMap = checkAndInit;
