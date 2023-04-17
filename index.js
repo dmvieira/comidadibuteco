@@ -11,7 +11,7 @@ function initMap() {
   });
 
   function changePosition(position){
-      map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude)).setZoom(12);
+      map.setCenter(position.coords.latitude, position.coords.longitude, 12);
   }
 
   if (navigator.geolocation) {
