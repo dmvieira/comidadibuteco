@@ -10,7 +10,7 @@ function initMap() {
     zoom: 6
   });
 
-  function changePosition(position){
+  function changePosition(position, map=map){
       map.setCenter({lat:position.coords.latitude, lng:position.coords.longitude}).setZoom(12);
   }
 
