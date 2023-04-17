@@ -13,7 +13,7 @@ function initMap(position) {
   else {
     map = new google.maps.Map(document.getElementById("map"), {
       center: rio,
-      zoom: 6
+      zoom: 4
     });
   }
 
