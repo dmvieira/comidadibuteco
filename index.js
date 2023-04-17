@@ -11,7 +11,7 @@ function initMap() {
   });
 
   function changePosition(position){
-      map.setCenter(position.coords.latitude, position.coords.longitude, 12);
+      map.setCenter({lat:position.coords.latitude, lng:position.coords.longitude}).setZoom(12);
   }
 
   if (navigator.geolocation) {
