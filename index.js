@@ -1,8 +1,5 @@
 let map;
 
-function changePosition(position){
-    map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude)).setZoom(12);
-}
 
 function initMap() {
   const rio = new google.maps.LatLng(-22.958296, -43.257151);
@@ -12,6 +9,10 @@ function initMap() {
     center: rio,
     zoom: 6
   });
+
+  function changePosition(position){
+      map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude)).setZoom(12);
+  }
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(changePosition);
