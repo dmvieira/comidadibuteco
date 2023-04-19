@@ -25,7 +25,7 @@ function initMap(position) {
     .then(function(places){
         for (var i in places) {
             var place = places[i];
-            createMarker(place.name, place.geo, place.url);
+            createMarker(place.name, place.geo, place.url, place.food, place.food_desc);
         }
     })
 
@@ -39,7 +39,7 @@ function checkAndInit(){
   }
 }
 
-function createMarker(name, geo, url) {
+function createMarker(name, geo, url, food, foodDesc) {
 
   var marker = new google.maps.Marker({
     map,
@@ -47,7 +47,7 @@ function createMarker(name, geo, url) {
     title: name
   });
   var infowindow = new google.maps.InfoWindow({
-    content: "<a href='"+url+"' target='_blank'>"+name+"</a>"
+    content: "<h3><a href='"+url+"' target='_blank'>"+name+"</a></h3><p><strong>"+food+"</strong><br />"+foodDesc+"</p>"
   });
   marker.addListener('click', function() {
     infowindow.open(map, marker);
