@@ -25,7 +25,8 @@ function initMap(position) {
     .then(function(places){
         for (var i in places) {
             var place = places[i];
-            createMarker(place.name, place.geo, place.url, place.food, place.food_desc);
+            createMarker(
+              place.name, place.geo, place.url, place.food, place.food_desc, place.work_hours, place.contact);
         }
     })
 
@@ -39,15 +40,25 @@ function checkAndInit(){
   }
 }
 
-function createMarker(name, geo, url, food, foodDesc) {
+function createMarker(name, geo, url, food, foodDesc, workHours, contact) {
 
   var marker = new google.maps.Marker({
     map,
     position: geo,
     title: name
   });
+  var message = "<h3><a href='"+url+"' target='_blank'>"+name+"</a></h3><p><strong>"+food+"</strong><br />"+foodDesc+"</p>";
+
+  if (workHours !== ''){
+    message += "<p><br /><br />"+workHours+"</p>"
+  }
+
+  if (contact !== ''){
+    message += "<p><br /><br />"+contact+"</p>"
+  }
+
   var infowindow = new google.maps.InfoWindow({
-    content: "<h3><a href='"+url+"' target='_blank'>"+name+"</a></h3><p><strong>"+food+"</strong><br />"+foodDesc+"</p>"
+    content: message
   });
   marker.addListener('click', function() {
     infowindow.open(map, marker);
