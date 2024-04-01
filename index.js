@@ -50,11 +50,11 @@ function createMarker(name, geo, url, food, foodDesc, workHours, contact) {
   var message = "<h3><a href='"+url+"' target='_blank'>"+name+"</a></h3><p><strong>"+food+"</strong><br />"+foodDesc+"</p>";
 
   if (workHours !== ''){
-    message += "<p><br /><br />"+workHours+"</p>"
+    message += "<p><br />Aberto: "+workHours+"</p>"
   }
 
   if (contact !== ''){
-    message += "<p><br /><br />"+contact+"</p>"
+    message += "<p><br />Contato: "+contact+"</p>"
   }
 
   var infowindow = new google.maps.InfoWindow({
