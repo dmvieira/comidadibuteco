@@ -23,13 +23,21 @@ function initMap(position) {
         return response.json();
     })
     .then(function(places){
+        var markers = [];
         for (var i in places) {
             var place = places[i];
-            createMarker(
-              place.name, place.geo, place.url, place.food, place.food_desc, place.work_hours, place.contact);
+            markers.push(createMarker(
+              place.name, place.geo, place.url, place.food, place.food_desc, place.work_hours, place.contact));
+        };
+        return markers
+    })
+    .then(function(markers){
+      google.maps.event.addListener(map, "click", function(event) {
+        for (var i = 0; i < markers.length; i++ ) { 
+          markers[i].close();
         }
     })
-
+  })
 }
 
 function checkAndInit(){
@@ -63,6 +71,7 @@ function createMarker(name, geo, url, food, foodDesc, workHours, contact) {
   marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
+  return infowindow;
 }
 
 window.initMap = checkAndInit;
