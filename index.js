@@ -23,31 +23,20 @@ function initMap(position) {
         return response.json();
     })
     .then(function(places){
-        var markersAndInfo = [];
+        var markers = [];
         for (var i in places) {
             var place = places[i];
-            markersAndInfo.push(createMarker(
+            markers.push(createMarker(
               place.name, place.geo, place.url, place.food, place.food_desc, place.work_hours, place.contact));
         };
-        return markersAndInfo
+        return markers
     })
-    .then(function(markersAndInfo){
+    .then(function(markers){
       google.maps.event.addListener(map, "click", function(event) {
-        for (var i = 0; i < markersAndInfo.length; i++ ) { 
-          markersAndInfo[i].info.close();
-        }   
-    })
-    return markersAndInfo;
-  }).then(function(markersAndInfo){
-    for (var i = 0; i < markersAndInfo.length; i++ ) { 
-      markersAndInfo[i].marker.addListener('click', function(event){
-        for (var j = 0; j < markersAndInfo.length; j++ ) {
-          if (i !== j){
-            markersAndInfo[j].info.close();
-          }
+        for (var i = 0; i < markers.length; i++ ) { 
+          markers[i].close();
         }
-      })
-    }
+    })
   })
 }
 
@@ -82,7 +71,7 @@ function createMarker(name, geo, url, food, foodDesc, workHours, contact) {
   marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
-  return {info: infowindow, marker: marker};
+  return infowindow;
 }
 
 window.initMap = checkAndInit;
