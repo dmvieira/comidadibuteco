@@ -38,7 +38,8 @@ function initMap(position) {
         return markersInfo;
     }).then(function(markersInfo){
         const markers = markersInfo.markers;
-        new markerClusterer.MarkerClusterer({ markers, map });
+        const algorithm = new markerClusterer.GridAlgorithm({});
+        new markerClusterer.MarkerClusterer({ algorithm, markers, map });
         return markersInfo.info;
     })
     .then(function(info){
