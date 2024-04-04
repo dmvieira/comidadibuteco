@@ -24,20 +24,30 @@ function initMap(position) {
     })
     .then(function(places){
         var markers = [];
+        var info = []
+        var markersInfo = new Object();
+        markersInfo.markers = markers;
+        markersInfo.info = info;
         for (var i in places) {
             var place = places[i];
-            markers.push(createMarker(
-              place.name, place.geo, place.url, place.food, place.food_desc, place.work_hours, place.contact));
+            var result = createMarker(
+              place.name, place.geo, place.url, place.food, place.food_desc, place.work_hours, place.contact);
+            markersInfo.info.push(result.info);
+            markersInfo.markers.push(result.marker);
         };
-        return markers
+        return markersInfo;
+    }).then(function(markersInfo){
+        const markers = markersInfo.markers;
+        new markerClusterer.MarkerClusterer({ markers, map });
+        return markersInfo.info;
     })
-    .then(function(markers){
+    .then(function(info){
       google.maps.event.addListener(map, "click", function(event) {
-        for (var i = 0; i < markers.length; i++ ) { 
-          markers[i].close();
-        }
+        for (var i = 0; i < info.length; i++ ) { 
+          info[i].close();
+        };
+      });
     })
-  })
 }
 
 function checkAndInit(){
@@ -71,7 +81,7 @@ function createMarker(name, geo, url, food, foodDesc, workHours, contact) {
   marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
-  return infowindow;
+  return {info: infowindow, marker: marker};
 }
 
 window.initMap = checkAndInit;
