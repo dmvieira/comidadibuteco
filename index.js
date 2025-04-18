@@ -66,10 +66,10 @@ function createMarker(name, geo, url, food, foodDesc, img, workHours, contact, a
     position: geo,
     title: name
   });
-  var message = "<h3><a href='"+url+"' target='_blank'>"+name+"</a></h3><p><strong>"+food+"</strong><br />"+foodDesc+"</p>";
+  var message = "<div style='max-width: 450'><h3><a href='"+url+"' target='_blank'>"+name+"</a></h3><p><strong>"+food+"</strong><br />"+foodDesc+"</p>";
 
   if (img !== ''){
-    message += "<br /><img src='"+img+"'><br />"
+    message += "<br /><img height='300' width='450' src='"+img+"'><br />"
   }
     
   if (workHours !== ''){
@@ -81,8 +81,9 @@ function createMarker(name, geo, url, food, foodDesc, img, workHours, contact, a
   }
 
   if (addrs !== ''){
-    message += "<p><br />Endereço: "+addr+"</p>"
+    message += "<p><br />Endereço: "+addrs+"</p>"
   }
+  message += "</div>"
 
 
   var infowindow = new google.maps.InfoWindow({
