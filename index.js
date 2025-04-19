@@ -69,7 +69,7 @@ function createMarker(name, geo, url, food, foodDesc, img, workHours, contact, a
   var message = "<div style='max-width: 450'><h3><a href='"+url+"' target='_blank'>"+name+"</a></h3><p><strong>"+food+"</strong><br />"+foodDesc+"</p>";
 
   if (img !== ''){
-    message += "<br /><img height='300' width='450' src='"+img+"'><br />"
+    message += "<br /><img style='display: none' height='300' width='450' src=''><br />"
   }
     
   if (workHours !== ''){
@@ -85,13 +85,25 @@ function createMarker(name, geo, url, food, foodDesc, img, workHours, contact, a
   }
   message += "</div>"
 
-
   var infowindow = new google.maps.InfoWindow({
     content: message
   });
+
   marker.addListener('click', function() {
+    if (img !== ''){
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(message, 'text/html');
+
+        var image = doc.getElementsByTagName('img')[0];
+        image.src = img
+        image.style.display = "block";
+        infowindow.setContent(doc.body.innerHTML);
+    }
     infowindow.open(map, marker);
+
   });
+
+
   return {info: infowindow, marker: marker};
 }
 
